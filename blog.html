@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanDrive Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .blog-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            overflow-y: scroll;
+            height: 400px;
+        }
+        .blog-content article {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        footer {
+            background: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UrbanDrive CAR Blog</h1>
+    </header>
+    
+    <div class="container">
+        <main class="blog-content">
+            <article>
+                <h2>Top 5 Cars for Road Trips</h2>
+                <p>Going on a long drive? Here are the best rental cars for comfort and fuel efficiency...</p>
+            </article>
+            <article>
+                <h2>Why Rent Instead of Buy?</h2>
+                <p>Discover the benefits of renting a car over owning one, especially in urban areas...</p>
+            </article>
+            <article>
+                <h2>Car Rental Tips for Beginners</h2>
+                <p>First time renting a car? Here's what you need to know...</p>
+            </article>
+        </main>
+        
+        <aside class="sidebar">
+            <h3>Featured Cars</h3>
+            <img src="png/pngwing.com (10).png" alt="Luxury Car">
+            <img src="png/pngwing.com (10).png" alt="SUV">
+            <img src="png/pngwing.com (10).png" alt="Convertible">
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 UrbanDrive CAR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

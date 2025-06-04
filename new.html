@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrBan Car</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Sign-Up Form Styling */
+        .signup-container {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            transition: right 0.4s ease-in-out;
+            z-index: 1000;
+        }
+
+        .signup-container.active {
+            right: 0;
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            color: #0043ff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .signup-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            background: #0043ff;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup-container button:hover {
+            background: #0033cc;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="Picsart_25-01-18_01-15-15-686.png">
+            <!-- <h1>UrbanDrive CAR</h1> -->
+        </div>
+
+        <div class="item">
+            <a class="home-btn" href="new.html">Home</a>
+            <a href="rentcar.html">Rent Car</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="about us.html">About Us</a>
+            <!-- <a href="/">Blog</a> -->
+            <a href="invest.html">Investors</a>
+        </div>
+        <div class="btn">
+            <a class="login" href="log.html" >Log in</a>
+            <a id="sign" href="" >Sign up</a>
+            <a class="button" href="app.html">Get the App</a>
+        </div>
+    </nav>
+    <div class="signup-container" id="signupForm">
+        <span class="close-btn" onclick="closeSignup()">&times;</span>
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Register</button>
+    </div>
+
+    <script>
+        document.getElementById("sign").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("signupForm").classList.add("active");
+        });
+
+        function closeSignup() {
+            document.getElementById("signupForm").classList.remove("active");
+        }
+    </script>
+
+    <div class="home">
+        <div class="main-sec">
+            <div class="left">
+                <p class="txt1">Drive anywhere, <br>
+                    <span style="color: #0043ff8c;">Rent </span>Your Car</p>
+                    <p><h3>India's largest  car-sharing marketplace</h3></p>
+                    <div class="btn">
+                        <!-- <input class="car" type="button" value="Rent Car"> -->
+                        <a class="car" type="button" href="rentcar.html" >Rent Car</a>
+                    </div>
+            </div>
+
+            <div class="right">
+                <img class="img1" src="bmw-22428.png" alt="" >
+            </div>
+        </div>
+    </div>
+
+    <section class="loc-sec">
+        <div class="main-sec"></div>
+        <div class="pick">
+          <label for="Location">Pick Up Location</label>
+          <p><i class="fa-solid fa-location-dot"></i>Mumbai,India</p>
+        </div>
+
+        <div class="pick">
+            <label for="location">Pick Up location</label>
+            <p><i class="fa-solid fa-location-dot"></i>Surat,India</p>
+        </div>
+
+        <div class="pick">
+            <label for="location">Pick Up Date</label>
+            <p><i class="fa-solid fa-calendar-days"></i>14-02-2024</p>
+        </div>
+
+        <div class="pick">
+            <label for="location">Return Date</label>
+            <p><i class="fa-solid fa-location-dot"></i>16-02-2024</p>
+        </div>
+        <div class="pick">
+            <label for="location">Return Date</label>
+            <p><i class="fa-solid fa-loc"></i>Surat,India</p>
+        </div>
+
+        <div class="pick">
+            <!-- <input type="button" value="Search Car"> -->
+             <a type="button" href="">Search</a>
+        </div>
+    </section>
+
+    <section class="car-sec">
+        <div class="txt">
+            <p class="txt1">Latest <span>Inventory</span></p>
+            <p class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ratione!</p>
+        </div>
+    </section>
+   
+    <section class="traffis">
+            <div id="box45">
+                <div id="png">
+                    <img id="innova" src="bmw.png.png">
+                    <div id="details">
+                        <h2>Bmw m320li : 1800/-</h2>
+                        <h3>Extra Km 8/km</h3>
+                        <h3>Extra Km 200/Hr</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="box45">
+                <div id="png">
+                    <img id="innova" src="porsche.png.png">
+                    <div id="details">
+                        <h2>Porsche 718 : 3000/-</h2>
+                        <h3>Extra Km 8/km</h3>
+                        <h3>Extra Km 700/Hr</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="box45">
+                <div id="png">
+                    <img id="innova" src="pngwing.com (4).png">
+                    <div id="details">
+                        <h2>Audi A6 : 1400/-</h2>
+                        <h3>Extra Km 18/km</h3>
+                        <h3>Extra Km 200/Hr</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+     <section class="explore">
+        <div class="explo1">
+            <div class="box21">
+                <img class="banglore" src="Bangalore.webp" alt="banglore">
+            </div>
+            <div class="information">
+            <h1>Explore Bangalore like a Local</h1>
+            <p class="like1">Discover the freedom of driving around Banglore on your own schedule. With short-term bookings
+                 <br> starting at just ₹799, Urbancar gives you the perfect way to experience the city for bussiness, leisure, and 
+                 <br> everything in between</p>
+            <p class="like2">Get self-drive cars for work meetings across town, in-city exploration, wedding ceremonies, processions, <br> and more on one self-drive car-sharing platform</p>
+            <button class="bang">BOOK CAR IN BANGLORE</button>
+        </div>
+        </div>
+        <div class="explo2">
+            <p class="txt3">Short-term rentals starting at <span>₹799</span></p>
+            <h4>Get convenience, comfort and privacy in your self-drive car in Bangalore.</h4>
+        </div>
+        <div class="explo3">
+            <div class="box22">
+                <img class="usecase" src="Usecase-1.webp" alt="banglore">
+                <div>
+                    <h1>Discover Bangalore's Local <br>Attractions</h1>
+                    <p>Drive to iconic spots like lalbagh Garders, Cubbon <br>Park, and MG Road with UrBanCar Bangalore</p>
+                </div>
+            </div>
+           
+            <div class="box23">
+                <img class="usecase" src="Usecase-2.webp" alt="banglore">
+                <div>
+                    <h1>Get Cars for Bussiness Travel and<br>Work Meetings</h1>
+                    <p>Navigate seamlessly between meetings or <br> conferences with a self-drive car that works around <br> your needs.</p>
+                </div>
+            </div>
+            
+            <div class="box24">
+                <img class="usecase" src="Usecase-3.webp" alt="banglore">
+                <div>
+                    <h1>Seammlessly Access Bangalore Airport<br>Transfers</h1>
+                    <p>Skip the cab queues and get a comfortable car to or <br>from Kempegowda International Airport with <br> UrBancar</p>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+
+     <!-- <section class="earn">
+        <div class="late">
+            <img class="rent" src="carrent.jpg" alt="">
+        </div>
+        
+        
+     </section> -->
+
+     <section class="support-sec">
+        <div class="txt">
+            <p class="txt1">Why <span>Choose </span>Us</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, deserunt?</p>
+        </div>
+
+        <div class="main-sec">
+            <div class="boxr">
+                <i class="fa-solid fa-phone"></i>
+                <div class="txt-sec">
+                    <p class="txt1">24 Hour Support</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta ipsum pariatur magnam temporibus in?</p>
+                </div>
+            </div>
+
+            <div class="boxr">
+                <i class="fa-solid fa-flag-checkered"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Best Price</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minima rerum veritatis incidunt nam repudiandae?</p>
+                </div>
+            </div>
+
+            <div class="boxr">
+                <i class="fa-solid fa-certificate"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Verified License</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime cumque dolores animi sequi perferendis.</p>
+                </div>
+            </div>
+
+            <div class="boxr">
+                <i class="fa-brands fa-servicestack"></i>
+                <div class="txt-sec">
+                    <p class="txt1">servicestack</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime cumque dolores animi sequi perferendis.</p>
+                </div>
+            </div>
+
+            <div class="boxr">
+                <i class="fa-brands fa-usps"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Benefits</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime cumque dolores animi sequi perferendis.</p>
+                </div>
+            </div>
+            <div class="boxr">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Free Cancelation</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque sequi animi ab
+                        corporis, necessitatibus eum cum vel rerum nisi.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="achie-sec">
+        <div class="txt">
+            <p class="txt1">Our <span>Achievement</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui mollitia commodi.</p>
+        </div>
+
+        <div class="main-sec">
+            <div class="boxr">
+                <p class="txt1">4,089</p>
+                <p>Active Member</p>
+            </div>
+
+            <div class="boxr">
+                <p class="txt1">1,090</p>
+                <p>Total Cars</p>
+            </div>
+
+            <div class="boxr">
+                <p class="txt1">2,590</p>
+                <p>Happy Customer</p>
+            </div>
+
+            <div class="boxr">
+                <p class="txt1">7,899</p>
+                <p>Positive Rating</p>
+            </div>
+
+            <div class="boxr">
+                <p class="txt1">67</p>
+                <p>Total Branches</p>
+            </div>
+        </div>
+     </section>
+
+     <section class="start-sec">
+        <div class="main-sec">
+            <div class="left">
+                <p class="txt1">Ready To Get Start?</p>
+                <p class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis voluptatum quae?</p>
+                <div class="btn">
+                    <a type="button" href="">contact us</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="verna.png" alt="">
+            </div>
+        </div>
+     </section>
+
+     <footer class="foot-sec">
+        <div class="logo">
+            <h1>sumithedau70</h1>
+        </div>
+
+        <div class="copy">
+            <p>Copyright &copy; 2025 Design By sumithedau70</p>
+        </div>
+
+        <div class="item">
+            <a href="/">Website Terms</a>
+            <a href="/">Contact Us</a>
+            <a href="/">Privacy Policy</a>
+
+     </footer>
+</body>
+</html>

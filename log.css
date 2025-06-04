@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f0f8ff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+}
+
+/* Information Sections */
+.info-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+blockquote {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #e6f0ff;
+    border-left: 5px solid #0044cc;
+    font-style: italic;
+}
+
+/* Login Section */
+.login-section {
+    background-color: #e6f0ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-box h2 {
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0044cc;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #0044cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003399;
+}
+
+/* Links Styling */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    font-size: 16px;
+    color: #0044cc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #003399;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+}

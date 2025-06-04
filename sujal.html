@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanDrive CAR - Rental Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .container {
+            width: 75%;
+            margin-left: 25%;
+            padding: 20px;
+        }
+        .listing {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .listing img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .details {
+            flex-grow: 1;
+        }
+        .price {
+            color: #007BFF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Filters</h2>
+        <p>Options for filtering results can go here.</p>
+    </div>
+    <div class="container">
+        <h1>Available Cars for Rent</h1>
+        <div class="listing">
+            <img src="car1.jpg" alt="GMC Savana 3500 Passenger">
+            <div class="details">
+                <h2>GMC Savana 3500 Passenger</h2>
+                <p>Seats: 7 | AC | Manual</p>
+                <p class="price">₹2,759 total</p>
+                <a href="#" class="button">View Deal</a>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="car2.jpg" alt="Toyota Corolla">
+            <div class="details">
+                <h2>Toyota Corolla</h2>
+                <p>Seats: 4 | AC | Manual</p>
+                <p class="price">₹2,759 total</p>
+                <a href="#" class="button">View Deal</a>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="car3.jpg" alt="GMC Savana 3500 Passenger">
+            <div class="details">
+                <h2>GMC Savana 3500 Passenger</h2>
+                <p>Seats: 7 | AC | Manual</p>
+                <p class="price">₹10,255 total</p>
+                <a href="#" class="button">View Deal</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
